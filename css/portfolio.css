@@ -1,0 +1,69 @@
+/* Good images: 
+cali mountains with shadow
+../images/20160602_192350.jpg
+../images/20160602_192350_vanilla.jpg
+
+arches natl. park, skinny stone tower
+../images/20170530_152519.jpg
+
+utah rockscape with tower
+../images/20170530_153457.jpg
+../images/20170530_153457_vanilla.jpg
+
+zion canyon in all its glory. If there is a garden of eden, it must be here.
+../images/20170531_143520.jpg
+../images/20170531_143520_vanilla.jpg
+
+california desert clouds
+../images/20170811_123602.jpg
+
+straight down zion canyon
+../images/20170812_125855.jpg
+../images/20170812_125855_vanilla.jpg
+
+colorado rockies
+../images/20170814_075837.jpg
+../images/20170814_075837_vanilla.jpg
+
+*/
+
+
+#background {
+    background-image: url("../images/20170531_143520_vanilla.jpg");
+    background-position: 0% 0%;
+    background-color: gray;
+    height: -webkit-fill-available;
+    background-size: cover;
+}
+
+#homeContainer {
+    text-align: center;
+    top: 40%;
+    position: relative;
+}
+
+#portfolioNavbar {
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar-fixed {
+    top: 0;
+    left: 0px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.jumbotron {
+  background-color: #121211;
+}
