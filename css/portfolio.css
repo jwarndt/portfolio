@@ -64,6 +64,10 @@ colorado rockies
     color: black;
 }
 
-.jumbotron {
-  background-color: #121211;
+.jumbotron-fluid {
+  margin-top: 40px;
+}
+
+.interestAreaHeadText {
+    font-weight: 300;
 }
