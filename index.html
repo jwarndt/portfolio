@@ -36,6 +36,9 @@
               <a class="nav-link" href="#photoGallery">Photo Gallery</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -46,14 +49,14 @@
       <div class="jumbotron-fluid" id="about">
         <h1 class="display-4">About</h1>
         <hr class="my-4">
-        I am a Masters student at the University of Minnesota studying geographic information science and computer science. Before beginning my Masters, I graduated from the University of Minnesota with a Bachelor of Science in geography and a Bachelor of Arts in music. I was first drawn to geography as an undergraduate student while taking a biogeography course. It was there that I discovered a passion for science and what soon became my primary interest, climatology. After declaring a major in geography, I began taking courses in GIS and quickly found myself enjoying its technical and analytical aspects. I was also impressed by its utility and importance in a broad range of application areas and topics relevant to everyday society. My interest in GIS and spatial computing revolves around my deep interest in its development and application to studying the earth system and earth/environmental science data. I'm particularly interested in GIS and spatial computing and its use in climatology, ecology, forestry, natural resources, machine learning, and the study of social vulnerability in the context of climate change and extremes. My interest in how the natural world changes over time has also led me towards a general interest in spatio-temporal data.
-        <br>
-        <br>
-        I find it difficult to summarize my interests in a single paragraph and so to get a better sense of who I am and my skills, take a look through my academic and professional experiences as well as my projects and research. I have had a broad range of experiences and opportunities as a student which have all shaped my interests and skills in one way or another. I have also had the good fortune to befriend and interact with a number of incredible mentors and teachers. As a result, I have been exposed to a variety of disciplines (some not related to GIS) - all of which have helped me become a well-rounded individual with a broad range of skills.
+        <img src="./images/jacob_arndt_photo.jpg" style="width:25%; float:left; margin-right:25px; box-shadow: 1px 1px 1px 1px">
+        I am a Masters student at the University of Minnesota studying geographic information science and computer science. Before beginning my Masters, I graduated from the University of Minnesota with a Bachelor of Science in geography and a Bachelor of Arts in music. My interest in GIS and spatial computing revolves around my deep interest in its development and application to studying the earth system and earth/environmental science data. I'm particularly interested in GIS and spatial computing and their use in climatology, remote sensing, and ecology. My interest in how the natural world changes over time has also led me towards a general interest in spatio-temporal data. However, most recently I've become interested in machine and deep learning and their application to spatial data. This subject has been the focus of my personal projects and research for the last two semesters as a Masters student. Within this subject, I've mostly been working in the area of satellite image classification and training convolutional neural networks. I hope to continue studying these topics and their application to spatial data in the near future.
+        <br><br> 
+        I currently work as a graduate research assistant at <a href="https://research.umn.edu/units/uspatial" target="_blank">U-Spatial</a> at the University of Minnesota. U-Spatial is part of research computing at the University of Minnesota and provides support for spatial research to students, faculty, researchers, and other organizations outside the university. As a graduate research assistant, I help answer technical questions that come into our help desk regarding GIS, remote sensing, and spatial computing. I'm also developing a web mapping application for a project in collaboration with the Minnesota Department of Health. The aim of this project is develop a tool that integrates public health, demographic, climate, and environmental data to allow emergency management officials and public planners to more accurately assess community vulnerabilities and plan for the future.
         <br>
         <br>
         <a href="./documents/arndt_resume_2018jan22.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary resTranButton" id="resumeButton" >View Resume</button></a>
-        <a href="./documents/arndt_umn_transcript_2018jan22.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary resTranButton" id="transcriptButton">View Transcript</button></a>
+        <!-- <a href="./documents/arndt_umn_transcript_2018jan22.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary resTranButton" id="transcriptButton">View Transcript</button></a> -->
 
       </div>
       <div class="jumbotron-fluid" id="academicProfessionalExperience">
@@ -63,11 +66,9 @@
         <br>
         <br>
         <h2 class="interestAreaHeadText">Dendrochronology</h2>
-        Immediately following undergraduate graduation I had the opportunity to travel to California with Dr. Dan Griffin (Department of Geography, University of Minnesota) to conduct field work.
         <br>
         <br>
         <h2 class="interestAreaHeadText">Graduate Research Assistant Positions</h2>
-        
         <br>
         <br>
         <h2 class="interestAreaHeadText">Undergraduate Research Opportunities Program</h2>
@@ -89,15 +90,19 @@
         <h2 class="interestAreaHeadText">Minnesota Climate Change Vulnerability Assessment Project</h2>
         <br>
         <br>
-        <h2 class="interestAreaHeadText">Deep Learning and TensorFlow for Satellite Imagery</h2>
+        <h2 class="interestAreaHeadText">Deep Learning and TensorFlow</h2><br>
+        <h4 class="interestAreaHeadText">Spatial Operations in Deep Learning for Satellite Image Classification</h4><br>
+        <b>Abstract</b><br>
+        Convolutional neural networks (CNNs) are the current state-of-the-art method used for image classification tasks. They have been shown to achieve impressive results on a variety of well-known computer vision datasets and in some cases have been able to outperform humans at image recognition tasks. However, deep learning and classification of satellite images, or more broadly geospatial data, has not yet been explored to the same extent as classification of everyday objects that are typically found in images taken by handheld cameras. Moreover, current methods do not take full advantage of the spatial information contained in geospatial data. A CNN builds a representation of the input features and their spatial properties through its convolutional and pooling layers, however, this spatial awareness is limited and not clearly understood. Here, I explore how methods from spatial statistics can be incorporated into CNN layers and the image preprocessing step to increase classification accuracy on satellite images. Specifically, I examine how measures of spatial autocorrelation can be used to better exploit the spatial properties inherent in satellite images. These ideas are tested using the satellite image dataset Functional Map of the World. Results from this research will provide insights into how CNNs understand spatial processes and whether incorporating spatial statistics into CNNs or the preprocessing step can improve classification accuracy.
+        <br>
+        <br>
+        <h4 class="interestAreaHeadText">Excursions with TensorFlow</h4>
+        <br>
+        TensorFlow is a machine learning framework developed at Google. It's free, open source, and has a large community of developers and users. It is widely used in industry and academia for production and research and is arguably the most popular machine learning framework in use today. Excursions with TensorFlow is a project composed of a series of short guides and demonstrations of how to carry out certain machine learning tasks using TensorFlow. These guides are intended for beginners and intermediate users of TensorFlow.
         <br>
         <br>
         <h2 class="interestAreaHeadText">DROught MOnitering Toolbox (DROMOT)</h2>
         A python package supporting vector and raster spatio-temporal data models, common climate summary statistics, a variety of drought indices, and workflows for easily working with remote sensing data and tensorflow for sophisticated classifications and prediction. 
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Midwest Climate Explorer</h2>
-        An application for visualizing and analyzing climate data from land-surface stations in the midwest.
         <br>
         <br>
         <h2 class="interestAreaHeadText">Undergraduate Research Opportunities Program</h2>
@@ -112,7 +117,9 @@
       <div class="jumbotron-fluid" id="contact">
         <h1 class="display-4">Contact</h1>
         <hr class="my-4">
-        Please feel free to contact me at: arndt204@umn.edu
+        contact: arndt204@umn.edu
+        <br>
+        <br>
       </div>
     </div>
 
