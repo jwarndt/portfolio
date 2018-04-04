@@ -48,6 +48,11 @@ colorado rockies
     transition: background-color .5s;
 }
 
+#tfGuidesNavbar {
+    background-color: #52504f;
+    box-shadow: 1px 1px 1px #545251;
+}
+
 .navbar-fixed {
     top: 0;
     left: 0px;
@@ -72,4 +77,14 @@ colorado rockies
 
 .interestAreaHeadText {
     font-weight: 300;
+}
+
+.contentRow {
+    margin-top: 10px;
+}
+
+.contentImage {
+    position:relative;
+    width:100%;
+    box-shadow: 1px 1px 1px 1px;
 }
