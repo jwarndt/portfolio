@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap-social.css">
+
     <link rel="stylesheet" href="./css/portfolio.css">
 
     <title>jwa</title>
@@ -21,159 +24,145 @@
         <nav class="navbar justify-content-center" id="portfolioNavbar">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#top">Home</a>
+              <a class="nav-link active" id="homeButton" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#academicProfessionalExperience">Academic and Professional Experience</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#projectsAndResearch">Projects and Research</a>
+              <a class="nav-link" id="aboutButton" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#photoGallery">Photo Gallery</a>
+              <a class="nav-link" id="projectsAndResearchButton" href="#">Projects and Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="photoGalleryButton" href="#">Photo Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" id="contactButton" href="#">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="container" id="#mainContainer">
-      <div class="jumbotron-fluid" id="about">
-        <h1 class="display-4">About</h1>
-        <hr class="my-4">
-        <img src="./images/jacob_arndt_photo.jpg" style="width:25%; float:left; margin-right:25px; box-shadow: 1px 1px 1px 1px">
-        I am a recent graduate of the University of Minnesota where I studied geographic information science and computer science. I graduated in May 2018 with a Masters of Geographic Information Science degree and an M.S. minor in computer science. Before my Masters, I graduated from the University of Minnesota with a Bachelor of Science in geography and a Bachelor of Arts in music. My interest in GIS and spatial computing revolves around my deep interest in its development and application to studying the earth system and earth/environmental science data. I'm particularly interested in GIS and spatial computing and their use in climatology, remote sensing, and ecology. Most recently I've become interested in machine learning and deep learning and their application to satellite images and spatial data.
-        <br><br> 
-        I currently work as a post-masters research associate at Oak Ridge National Laboratory in the Geograhpic Information Science and Technology Group. Here, I am a part of the Population Distribution and Dynamics team assisting with the development of high resolution settlement and neighborhood maps from satellite imagery using machine learning and image processing techniques. I am also a member of the ARES project working on developing a technical standard for the incorporation of spectral response information into the National Imagery Transmission Format (NITF). 
-        <br>
-        <br>
-        <a href="./documents/jacob_arndt_resume.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary resTranButton" id="resumeButton" >View Resume</button></a>
-        <!-- <a href="./documents/arndt_umn_transcript_2018jan22.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary resTranButton" id="transcriptButton">View Transcript</button></a> -->
-
-      </div>
-      <!-- <div class="jumbotron-fluid" id="academicProfessionalExperience">
-        <h1 class="display-4">Academic and Professional Experience</h1>
-        <hr class="my-4">
-        <h2 class="interestAreaHeadText">NASA DEVELOP Student Internship</h2>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Dendrochronology</h2>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Graduate Research Assistant Positions</h2>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Undergraduate Research Opportunities Program</h2>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Presentations and Conferences</h2>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Awards and Recognition</h2>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Service and Volunteer Experiences</h2>
-        <br>
-        <br>
-      </div> -->
-        
-      <div class="jumbotron-fluid" id="projectsAndResearch">
-        <h1 class="display-4">Projects and Research</h1>
-        <hr class="my-4">
-        <h2 class="interestAreaHeadText">Minnesota Climate Change Vulnerability Assessment Project</h2>
-        This is a project that I worked on as a graduate research assistant at University of Minnesota in collaboration with the Minnesota Department of Health. The goal of this project was to develop a pilot tool to help emergency management officials and planners understand community vulnerability to future climate and extremes.<br><br>
-        <a href="http://maps.umn.edu/climatehealthtool/" target="_blank">Minnesota Climate and Health Vulnerability Assessment Project</a>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Deep Learning and TensorFlow</h2><br>
-        <h4 class="interestAreaHeadText">Spatial Operations in Deep Learning for Satellite Image Classification</h4>
-        <b>Abstract</b><br>
-        Convolutional neural networks (CNNs) are the current state-of-the-art method used for image classification tasks. They have been shown to achieve impressive results on a variety of well-known computer vision datasets and in some cases have been able to outperform humans at image recognition tasks. However, deep learning and classification of satellite images, or more broadly geospatial data, has not yet been explored to the same extent as classification of everyday objects that are typically found in images taken by handheld cameras. Moreover, current methods do not take full advantage of the spatial information contained in geospatial data. A CNN builds a representation of the input features and their spatial properties through its convolutional and pooling layers, however, this spatial awareness is limited and not clearly understood. Here, I explore how methods from spatial statistics can be incorporated into CNN layers and the image preprocessing step to increase classification accuracy on satellite images. Specifically, I examine how measures of spatial autocorrelation can be used to better exploit the spatial properties inherent in satellite images. These ideas are tested using the satellite image dataset Functional Map of the World. Results from this research will provide insights into how CNNs understand spatial processes and whether incorporating spatial statistics into CNNs or the preprocessing step can improve classification accuracy.
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">Geocomputing Blog</h2>
-        <a href="./blog.html">Blog</a>
-        <br>
-        <br>
-        <h2 class="interestAreaHeadText">DROught MOnitering Toolbox (DROMOT)</h2>
-        The DRought MOnitering Toolbox is a set of tools written in Python for processing spatiotemporal data. Its original purpose was for calculating the Keetch-Byram Drought Index and McArthur's Forest Fire Danger Index but it has since grown to include functionality outside the realm of drought indices. It currently supports both vector and raster spatiotemporal data models and a variety of methods related to remote sensing and climate summary statistics. In the future I plan to make this project into a Python package for easier use and distribution.
-        <br>
-        <br>
-        <a href="https://github.com/jwarndt/DROMOT" target="_blank">Learn more</a>
-        <br>
-      </div>
-      <div class="jumbotron-fluid" id="photoGallery">
-        <h1 class="display-4">Photos</h1>
-        <hr class="my-4">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="left:12.5%">
-          <ol class="carousel-indicators" style="right:25%">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-75 h-75" src="./images/20170812_125855.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20170814_082340.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20170530_153457.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20170530_152519.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20160606_122831.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20160603_173229.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20160606_122935.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-75 h-75" src="./images/20170530_150942.jpg" alt="Third slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="right:25%">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+    <div class="container" id="mainContainer">
+      <div class="container sectionContainer" id="aboutContainer">
+        <div class="jumbotron-fluid" id="about">
+          <h1 class="display-4 sectionHeader">About</h1>
+          <!-- <img src="./images/jacob_arndt_photo.jpg" style="width:25%; float:left; margin-right:25px; box-shadow: 1px 1px 1px 1px"> -->
+          I am a recent graduate of the University of Minnesota where I studied geographic information science and computer science. I graduated in May 2018 with a Masters of Geographic Information Science degree and an M.S. minor in computer science. Before my Masters, I graduated from the University of Minnesota with a Bachelor of Science in geography and a Bachelor of Arts in music. My interest in GIS and spatial computing revolves around my deep interest in its development and application to studying the earth system and earth/environmental science data. I'm particularly interested in GIS and spatial computing and their use in climatology, remote sensing, and ecology. Most recently I've become interested in machine learning and deep learning and their application to satellite images and spatial data.
+          <br><br> 
+          I currently work as a post-masters research associate at Oak Ridge National Laboratory in the Geograhpic Information Science and Technology Group. Here, I am a part of the Population Distribution and Dynamics team assisting with the development of high resolution settlement and neighborhood maps from satellite imagery using machine learning and image processing techniques. I am also a member of the ARES project working on developing a technical standard for the incorporation of spectral response information into the National Imagery Transmission Format (NITF). 
+          <br>
+          <br>
+          <a href="./documents/jacob_arndt_resume.pdf" target="_blank"><button type="button" class="btn btn-outline-secondary resTranButton" id="resumeButton" >View Resume</button></a>
         </div>
-
       </div>
-      <div class="jumbotron-fluid" id="contact">
-        <h1 class="display-4">Contact</h1>
-        <hr class="my-4">
-        contact: arndt204@umn.edu
-        <br>
-        <br>
+
+      <div class="container sectionContainer" id="projectsAndResearchContainer">
+        <div class="jumbotron-fluid" id="projectsAndResearch">
+          <h1 class="display-4 sectionHeader">Projects and Research</h1>
+          <!-- <h2 class="interestAreaHeadText">Minnesota Climate Change Vulnerability Assessment Project</h2>
+          This is a project that I worked on as a graduate research assistant at University of Minnesota in collaboration with the Minnesota Department of Health. The goal of this project was to develop a pilot tool to help emergency management officials and planners understand community vulnerability to future climate and extremes.<br><br>
+          <a href="http://maps.umn.edu/climatehealthtool/" target="_blank">Minnesota Climate and Health Vulnerability Assessment Project</a>
+          <br>
+          <br> -->
+          <h2 class="interestAreaHeadText">Blog</h2>
+          Thoughts, implementations, tutorials, and experiments related to:
+          <ul>
+            <li>geocomputing</li>
+            <li>remote sensing</li>
+            <li>machine learning</li>
+            <li>deep learning</li>
+            <li>climatology</li>
+            <li>web GIS</li>
+            <li>Python</li>
+          </ul>
+          <a href="./blog.html">Learn more</a>
+          <br>
+          <br>
+          <h2 class="interestAreaHeadText">DROught MOnitering Toolbox (DROMOT)</h2>
+          The DRought MOnitering Toolbox is a set of tools written in Python for processing spatiotemporal data. Its original purpose was for calculating the Keetch-Byram Drought Index and McArthur's Forest Fire Danger Index but it has since grown to include functionality outside the realm of drought indices. It currently supports both vector and raster spatiotemporal data models and a variety of methods related to remote sensing and climate summary statistics. In the future I plan to make this project into a Python package for easier use and distribution.
+          <br>
+          <br>
+          <a href="https://github.com/jwarndt/DROMOT" target="_blank">Learn more</a>
+          <br>
+        </div>
+      </div>
+
+      <div class="container sectionContainer" id="photoGalleryContainer">
+        <div class="jumbotron-fluid" id="photoGallery">
+          <h1 class="display-4 sectionHeader">Photos</h1>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="left:12.5%">
+            <ol class="carousel-indicators" style="right:25%">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-75 h-75" src="./images/20170812_125855.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20170814_082340.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20170530_153457.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20170530_152519.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20160606_122831.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20160603_173229.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20160606_122935.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-75 h-75" src="./images/20170530_150942.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="right:25%">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="contactContainer">
+        <div class="jumbotron-fluid" id="contact">
+          <h1 class="display-4 sectionHeader">Contact</h1>
+          <p>email: arndt204[at]umn.edu</p>
+          
+          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jacobwarndt" target="_blank" style="color:white;">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a class="btn btn-social-icon btn-github" href="https://github.com/jwarndt" target="_blank" style="color:white;">
+            <span class="fa fa-github"></span>
+          </a>
+
+          <br>
+          <br>
+        </div>
       </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
