@@ -45,7 +45,7 @@ colorado rockies
 }
 
 .sectionContainer {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 10px;
     padding-right: 15%;
     padding-left: 15%;
@@ -103,13 +103,17 @@ colorado rockies
 }
 
 .nav-link {
+    border-bottom: 1px solid transparent;
+    /*padding-bottom: 3px;*/
     color: white;
     font-size: 16px;
-    transition: color .5s;
+    transition: border-bottom 0.5s;
 }
 
 .nav-link:hover {
-    color: black;
+    border-bottom: 1px solid #fff;
+    /*padding-bottom: 3px;*/
+    color: white;
 }
 
 .jumbotron-fluid {
