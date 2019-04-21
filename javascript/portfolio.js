@@ -32,9 +32,9 @@ $(document).ready(function() {
     $('html,body').animate({
       scrollTop: $("#projectsAndResearchContainer").offset().top -55}, scrollSpeed);
   });
-  $("#photoGalleryButton").click(function() {
+  $("#miscellaneousButton").click(function() {
     $('html,body').animate({
-      scrollTop: $("#photoGalleryContainer").offset().top-55}, scrollSpeed);
+      scrollTop: $("#miscellaneousContainer").offset().top-55}, scrollSpeed);
   });
   $("#contactButton").click(function() {
     $('html,body').animate({

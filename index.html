@@ -43,7 +43,7 @@
               <a class="nav-link" id="projectsAndResearchButton" href="#">Projects and Research</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="photoGalleryButton" href="#">Photo Gallery</a>
+              <a class="nav-link" id="miscellaneousButton" href="#">Miscellaneous</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./blog.html">Blog</a>
@@ -60,11 +60,10 @@
         <div class="jumbotron-fluid" id="about">
           <h1 class="display-4 sectionHeader">About</h1>
           <!-- <img src="./images/jacob_arndt_photo.jpg" style="width:25%; float:left; margin-right:25px; box-shadow: 1px 1px 1px 1px"> -->
-          I am a recent graduate of the University of Minnesota where I studied geographic information science and computer science. I graduated in May 2018 with a Masters of Geographic Information Science degree and an M.S. minor in computer science. Before my Masters, I graduated from the University of Minnesota with a Bachelor of Science in geography and a Bachelor of Arts in music. My interest in GIS and spatial computing revolves around my deep interest in its development and application to studying the earth system and earth/environmental science data. I'm particularly interested in GIS and spatial computing and their use in climatology, remote sensing, and ecology. Most recently I've become interested in machine learning and deep learning and their application to satellite images and spatial data.
-          <br><br> 
-          I currently work as a post-masters research associate at Oak Ridge National Laboratory in the Geographic Information Science and Technology Group. Here, I am a part of the Population Distribution and Dynamics team assisting with the development of high resolution settlement and neighborhood maps from satellite imagery using machine learning and image processing techniques. I am also a member of the ARES project working on developing a technical standard for the incorporation of spectral response information into the National Imagery Transmission Format (NITF). 
-          <br>
-          <br>
+          I am a geospatial data scientist interested in the development of GIS, spatial computing, and machine learning. I am interested in their application to geographic data of all kinds and problems in earth science, remote sensing, and human dynamics. I graduated in May 2018 from the University of Minnesota with a Masters of Geographic Information Science degree and an M.S. minor in computer science. Before my Masters, I graduated from the University of Minnesota with a Bachelor of Science in geography and a Bachelor of Arts in music.
+          <br><br>
+          I currently work as a post-masters research associate at Oak Ridge National Laboratory in the Geographic Data Science Group. Here, I am assisting with the development of high resolution settlement and urban land-use maps from high-resolution satellite imagery using deep learning, machine learning, and image processing techniques. My latest responsibilities are in a large-scale land-use classification project of the entire country of Venezuela. I conduct research in large-scale remote sensing scene classification and work on all aspects of the pipeline from data generation to modeling. I am also a member of the ARES project working on developing a technical standard for the incorporation of spectral response information into the National Imagery Transmission Format (NITF).
+          <br><br>
           <a href="./posts/resume.html"><button type="button" class="btn btn-outline-secondary resTranButton" id="resumeButton" >View Resume</button></a>
         </div>
       </div>
@@ -77,6 +76,32 @@
           <a href="http://maps.umn.edu/climatehealthtool/" target="_blank">Minnesota Climate and Health Vulnerability Assessment Project</a>
           <br>
           <br> -->
+          <h2 class="interestAreaHeadText">Large-Scale Urban Land-Use Classification and Settlement Detection</h2>
+          Ongoing research and development I am participating in at Oak Ridge National Laboratory.
+          <br>
+          <br>
+          <b>related publication: </b><br>J. Arndt, D. Lunga, J. Weaver, S. LeDoux, and S. Tennile, "Multiscale Based Characterization and Classification of Urban Land-Use" <i>2019 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)</i>, Yokohama, Japan, 2019, pp. xx-xx. (review/publication in progress)<br><br>
+          
+          <h2 class="interestAreaHeadText">The International Tree-Ring Data Bank (ITRDB) Web-GIS Application</h2>
+          The ITRDB is the primary data repository for tree-ring measurements. The dataset consists of over 4500 study sites that span the entire globe. Each study site is comprised of a collection of measurement files made by meticulously measuring and analyzing the individual tree-ring cores sampled from the trees at the study site. The creators and users of these data are dendrochronologists who study the sequence of annual growth rings in trees to better understand environmental history and climate. This web application allows you visualize, query, and analyze tree-ring chronologies in the ITRDB. The application is significantly faster and offers better functionality for querying, visualizing, and downloading data than NOAA's NCDC GIS map. The application is built using a wide range of different technologies and programming libraries. The web mapping functionality is accomplished using GeoServer and Leaflet. D3 is used for creating the interactive time-series charts. Postgres and PostGIS are used for storing and querying the spatial data. Future directions for this project include incorporating other paleoclimate datasets (ice cores, pollen, speleothems, etc.) and collaborating with domain scientists to understand how to improve the application to better support their current workflows.
+          <br>
+          <br>
+          <img src="./images/itrdb_global.PNG" style="width:350px">
+          <img src="./images/time_series_example.PNG" style="width:350px;height:240px">
+          <img src="./images/query_data_example.PNG" style="width:350px;height:240px">
+          <br>
+          <br>
+          <a href="https://github.com/jwarndt/itrdb" target="_blank">Learn more</a>
+          <br>
+          <br>
+          <h2 class="interestAreaHeadText">Keech-Byram Drought Index and McArthur's Forest Fire Danger Index Python package</h2>
+          kbdi-ffdi is a Python package for calculating the Keech-Byram Drought Index (KBDI) and McArthur’s Forest Fire Danger Index (FFDI) from daily surface-level meteorological data. KBDI and FFDI are commonly used metrics for assessing drought and fire danger in South Africa and Australia. This package was developed during a collaboration with fire ecologists in South Africa. With the kbdi-ffdi Python package, you can compute KBDI and FFDI from csv data. Future work will focus on adding functionality for computing kbdi-ffdi on netCDF data.
+          <br><br>
+          <b>related publication: </b><br>T. Kraaij, J. Baard, J. Arndt, L. Vhengani, and B. van Wilgen, "An assessment of climate, weather, and fuel factors in influencing a large, destructive wildfire in the Knysna region, South Africa", <i>Fire Ecology</i>, vol. 14, no. 2, 2018.
+          <br><br>
+          <a href="https://kbdi-ffdi.readthedocs.io/en/latest/index.html" target="_blank">Learn more</a>
+          <br>
+          <br>
           <h2 class="interestAreaHeadText">Blog</h2>
           Thoughts, implementations, tutorials, and experiments related to:
           <ul>
@@ -91,32 +116,41 @@
           <a href="./blog.html">Learn more</a>
           <br>
           <br>
-          <h2 class="interestAreaHeadText">The International Tree-Ring Data Bank (ITRDB) Web-GIS Application</h2>
-          The ITRDB is the primary data repository for tree-ring measurements. The dataset consists of over 4500 study sites that span the entire globe. Each study site is comprised of a collection of measurement files made by meticulously measuring and analyzing the individual tree-ring cores sampled from the trees at the study site. The creators and users of these data are dendrochronologists who study the sequence of annual growth rings in trees to better understand environmental history and climate. This web application allows you visualize, query, and analyze tree-ring chronologies in the ITRDB. The application is built using a wide range of different technologies and programming libraries. The web mapping functionality is accomplished using GeoServer and Leaflet. D3 is used for creating the interactive time-series charts. Postgres and PostGIS are used for storing and querying the spatial data.
-          <br>
-          <br>
-          <img src="./images/itrdb_global.PNG" style="width:350px">
-          <img src="./images/time_series_example.PNG" style="width:350px;height:240px">
-          <img src="./images/query_data_example.PNG" style="width:350px;height:240px">
-          <br>
-          <br>
-          <a href="https://github.com/jwarndt/itrdb" target="_blank">Learn more</a>
-          <br>
-          <br>
-          <h2 class="interestAreaHeadText">Keech-Byram Drought Index and McArthur's Forest Fire Danger Index Python package</h2>
-          kbdi-ffdi is a Python package for calculating the Keech-Byram Drought Index (KBDI) and McArthur’s Forest Fire Danger Index (FFDI) from daily surface-level meteorological data. KBDI and FFDI are commonly used metrics for assessing drought and fire danger in South Africa and Australia. With the kbdi-ffdi Python package, you can compute KBDI and FFDI from csv data or netCDF data and save the results.
-          <br>
-          <br>
-          <a href="https://kbdi-ffdi.readthedocs.io/en/latest/index.html" target="_blank">Learn more</a>
-          <br>
-          <br>
         </div>
       </div>
 
-      <div class="container sectionContainer" id="photoGalleryContainer">
-        <div class="jumbotron-fluid" id="photoGallery">
-          <h1 class="display-4 sectionHeader">Photos</h1>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="left:12.5%">
+      <div class="container sectionContainer" id="miscellaneousContainer">
+        <div class="jumbotron-fluid" id="miscellaneous">
+          <h1 class="display-4 sectionHeader">Miscellaneous</h1>
+          <h2 class="interestAreaHeadText">Pottery</h2>
+          <p>my recent dive into wheel thrown pottery: <a href="./pottery/index.html" target="_blank">JWA Pottery</a></p>
+          <br>
+          <h2 class="interestAreaHeadText">Useful Links</h2>
+          <a href='http://www.grss-ieee.org/' target="_blank">IEEE GRSS website</a><br>
+          <a href='http://www.grss-ieee.org/community/technical-committees/data-fusion/' target="_blank">IEEE GRSS data fusion contest website</a><br>
+          <a href='http://www.grss-ieee.org/community/technical-committees/earth-science-informatics/' target="_blank">IEEE GRSS Earth Science Informatics Technical Committee</a><br>
+          <a href="https://www.isprs.org/" target="_blank">ISPRS website</a><br>
+          <a href='https://earthexplorer.usgs.gov/' target="_blank">USGS Earth Explorer</a><br>
+
+          <br>
+          <b>Datasets</b><br>
+          <a href='https://spacenetchallenge.github.io/datasets/datasetHomePage.html' target="_blank">SpaceNet Datasets</a> (includes two buildings datasets, one roads dataset, and one off-nadir dataset)<br>
+          <a href='https://github.com/fmow' target="_blank">IARPA Functional Map of the World</a><br>
+          <a href='http://weegee.vision.ucmerced.edu/datasets/landuse.html' target="_blank">UC Merced Land Use Dataset</a><br>
+          <a href='http://www.xinhua-fluid.com/people/yangwen/WHU-RS19.html' target="_blank">WHU-RS19</a><br>
+          <a href='http://captain.whu.edu.cn/WUDA-RSImg/aid.html' target="_blank">AID</a><br>
+          <a href='https://github.com/lehaifeng/RSI-CB' target="_blank">RSI-CB</a><br>
+          <a href='http://www.escience.cn/people/JunweiHan/NWPU-RESISC45.html' target="_blank">NWPU-RESISC45</a><br>
+          <a href='https://csc.lsu.edu/~saikat/deepsat/' target="_blank">Sat-4 and Sat-6</a><br>
+          <a href='https://www.cs.toronto.edu/~vmnih/data/' target="_blank">Massachusetts Roads and Buildings</a><br>
+          <a href='http://deepglobe.org/challenge.html' target="_blank">DeepGlobe</a><br>
+          <a href='http://www2.isprs.org/commissions/comm3/wg4/tests.html' target="_blank">ISPRS Datasets</a><br>
+          <a href='http://xviewdataset.org/' target="_blank">xView</a><br>
+
+          <br>
+          <!-- <h2 class="interestAreaHeadText">Photos</h2> -->
+
+          <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="left:12.5%">
             <ol class="carousel-indicators" style="right:25%">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -162,13 +196,13 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="container" id="contactContainer">
         <div class="jumbotron-fluid" id="contact">
           <h1 class="display-4 sectionHeader">Contact</h1>
-          <p>email: arndt204[at]umn.edu</p>
+          <p>email: jakewarndt@gmail.com</p>
           
           <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jacobwarndt" target="_blank" style="color:white;">
             <span class="fa fa-linkedin"></span>
